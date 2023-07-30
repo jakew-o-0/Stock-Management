@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QScrollArea" name="OrdersScrollArea">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>780</width>
+         <height>509</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Pending Orders</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <widget class="QMenu" name="StockMenu">
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Stock</string>
+    </property>
+    <addaction name="ViewAll_Action"/>
+    <addaction name="ViewSuspended_Action"/>
+    <addaction name="VewUnsuspended_Action"/>
+    <addaction name="separator"/>
+    <addaction name="Import_Action"/>
+    <addaction name="Export_Action"/>
+    <addaction name="ConnectToDataBase_Action"/>
+   </widget>
+   <widget class="QMenu" name="OrdersMenu">
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Orders</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="AddOrder_Action"/>
+    <addaction name="separator"/>
+    <addaction name="RemoveAll_Action"/>
+    <addaction name="CompleteAll_Action"/>
+   </widget>
+   <addaction name="StockMenu"/>
+   <addaction name="OrdersMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="ViewAll_Action">
+   <property name="text">
+    <string>View All</string>
+   </property>
+  </action>
+  <action name="ViewSuspended_Action">
+   <property name="text">
+    <string>View Suspended</string>
+   </property>
+  </action>
+  <action name="VewUnsuspended_Action">
+   <property name="text">
+    <string>View Unsuspended</string>
+   </property>
+  </action>
+  <action name="Import_Action">
+   <property name="text">
+    <string>Import</string>
+   </property>
+  </action>
+  <action name="Export_Action">
+   <property name="text">
+    <string>Export</string>
+   </property>
+  </action>
+  <action name="ConnectToDataBase_Action">
+   <property name="text">
+    <string>Connect To DataBase</string>
+   </property>
+  </action>
+  <action name="AddOrder_Action">
+   <property name="text">
+    <string>Add Order</string>
+   </property>
+  </action>
+  <action name="RemoveAll_Action">
+   <property name="text">
+    <string>Remove All</string>
+   </property>
+  </action>
+  <action name="CompleteAll_Action">
+   <property name="text">
+    <string>Complete All</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
